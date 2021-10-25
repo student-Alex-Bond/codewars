@@ -1,11 +1,9 @@
-const reverseSeq = n => {
-    while (n !==0) {
-      [].push(n);
-      n--;
-      
+function reverseWords(str){
+    const arr = [];
+    for (let i =0 ; i< str.length; i++){
+        arr.push(str[i])
     }
-    
-    return [];
-  };
+    return arr; // reverse those words
+  }
 
-  console.log(reverseSeq(5))
+ console.log(reverseWords('The greatest victory is that which requires no battle')) 
