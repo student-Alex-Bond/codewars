@@ -1,5 +1,5 @@
 function check(a, x) {
-    let c = '';
+    let c;
     for (let i=0; i< a.length; i++){
       if (a[i] == x){
         c = a[i]; 
