@@ -1,8 +1,6 @@
 function highAndLow(numbers){
     const arr = numbers.split(' ');
-    for(let i=0; i<arr.length; i++){
-        arr[i]= Number(arr[i]);
-    }
+    arr.forEach(el => {el = Number(el)});
     let min = Math.min.apply( Math, arr);
     let max = Math.max.apply( Math, arr);
     let res = String(max) + ' ' +  String(min);
