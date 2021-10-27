@@ -1,11 +1,7 @@
-function evenNumbers(array, number=0) {
-  const arr = array.filter(el => el%2 ==0);
-
-  const  res =[];
-  for (i=0; i<number;i++){
-      res.unshift(arr[arr.length -i-1])
-  }
-  return res;
+function evenNumbers(array, number) {
+  const arr = array.filter(el => el%2 ==0).slice(-number);
+  
+  return arr;
   
     // good luck
   }
